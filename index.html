@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta title="Jad Alrehaoui">
+  <meta name="description" content="Jad Alreahoui, Web developer, Freelancer. You can view my work and contact me for more information.">
+  <title>Jad Alrehaoui</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="overlay" onclick="exit()">
+    <div class="centered">
+      <div class="achImg"></div>
+      <div class="achDesc">
+        <h3></h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="personalInfoContainer">
+    <div><img class="displayPic" src="personalimg.jpg" alt=""></div>
+    <div class="personalInfoText">
+      <h1>Jad Alrehaoui</h1>
+      <p><em><strong>Full-stack web developer.</strong></em></p>
+      <p><strong>Energetic</strong> software developer with a year of experience developing robust code for companies and businesses. Developed good websites for big companies in Lebanon. Spearheaded a team that won the 1st Project award at the American University of Science and Technology. An <strong>enthusiastic team player and deep creative thinker.</strong></p>
+      <h4 id="openContact">Contact Information</h4>
+      <div id="contactInfo" class="hidden">
+        <p><a href="tel:(503) 413 0335"><i class="fa fa-phone-square" aria-hidden="true"></i> (503) 413 0335</a></p>
+        <p><a href="mailto:jad.rehaoui@live.com"><i class="fa fa-envelope" aria-hidden="true"></i> jad.rehaoui@live.com</a></p>
+        <p><i class="fa fa-address-card" aria-hidden="true"></i> Portland, 97229</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <h3>Education</h3>
+  <p><strong>Bachelor's degree</strong> in <em>Information and Communication Technology</em>.</p>
+  <p><em>A part from the college curriculum, I have taken many courses on Udemy, Coursera and other online learning websites, to enhance my knowlodge in development and to keep myself up to date.</em></p>
+  <hr>
+  <h3>Experience</h3>
+  <ol>
+    <li onmouseover="openDesc(this)">
+      <h4 class="expTitle">Back End Developer - <em>Koein</em> - Lebanon</h4>
+      <div class="expDesc hidden" onmouseleave="closeDesc(this)">
+        <h5>skills needed</h5>
+        <ul>
+          <li>Asp.NET MVC Framework</li>
+          <li>Javascript</li>
+          <li>JQuery</li>
+          <li>Angular</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+    </li>
+    <li onmouseover="openDesc(this)">
+      <h4 class="expTitle">DevOps Intern - <em>Smarty</em> - Lebanon</h4>
+      <div class="expDesc hidden" onmouseleave="closeDesc(this)">
+        <h5>skills needed</h5>
+        <ul>
+          <li>Deploying Services - Ansible</li>
+          <li>Managing Databases - Elasticsearch, Neo4J, Redis</li>
+          <li>Coding with bash</li>
+        </ul>
+      </div>
+    </li>
+    <li onmouseover="openDesc(this)">
+      <h4 class="expTitle">Full Stack Developer - <em>Freelance</em> - Lebanon</h4>
+      <div class="expDesc hidden" onmouseleave="closeDesc(this)">
+        <h5>skills needed</h5>
+        <ul>
+          <li>Coding :  NodeJS, Ruby on Rails, PHP, JAVA, SQL, HTML, ReactJS, JavaScript and JQuery</li>
+          <li>Databases : MongoDB, MySQL, phpMyAdmin</li>
+          <li>Finalizing the user experience (UX) and the user interface (UI) designs</li>
+          <li>Maintaining and Supporting</li>
+        </ul>
+      </div>
+    </li>
+    <li onmouseover="openDesc(this)">
+      <h4 class="expTitle">Front End Developer - <em>Sowlutions</em> - Lebanon</h4>
+      <div class="expDesc hidden" onmouseleave="closeDesc(this)">
+        <h5>skills needed</h5>
+        <ul>
+          <li>HTML, CSS, Javascript, JQuery, and ReactJS</li>
+          <li>Middle tier development</li>
+          <li>Finalizing the user experience (UX) and the user interface (UI) designs</li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+  <hr>
+  <h3>Achievements</h3>
+  <ol>
+    <li class="mousePoint" onclick="imageViewer('seniorProjectCert.jpg')">
+      No. 1 Senior Project, Expo 2017 at AUST.
+    </li>
+    <li class="mousePoint" onclick="imageViewer('hindahmad.png')">
+      Hind Ahmad Website - Lebanese Exhibition Website. (<a target="_blank" href="http://shift2.koein.com/hindahmad">visit</a>)
+    </li>
+    <li class="mousePoint" onclick="imageViewer('undp.png')">
+      UNDP Website - Form website to start a service. (<a target="_blank" href="http://shift2.koein.com/undp">visit</a>)
+    </li>
+    <li class="mousePoint" onclick="imageViewer('georgesjreij.png')">
+      Georges Jreij Website - Law firm Website. (<a target="_blank" href="http://shift2.koein.com/georgesjreijlawfirm">visit</a>)
+    </li>
+    <li class="mousePoint" onclick="imageViewer('zoneart.png')">
+      Zone Art Website - Interior Design and wood work Website. (<a target="_blank" href="http://zoneart-lb.com">visit</a>)
+    </li>
+  </ol>
+  <hr>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="stylefunctions.js"></script>
+</body>
+
+</html>

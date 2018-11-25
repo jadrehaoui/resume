@@ -1,0 +1,57 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+.mousePoint {
+  cursor: pointer;
+}
+#openContact {
+  cursor: pointer;
+}
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+.centered {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 80%;
+  margin: 70px auto ;
+}
+.achImg {
+  flex: 4;
+  background-position-x: center;
+  background-position-y: center;
+}
+.achDesc {
+  flex: 2;
+  text-align: center;
+  background-color: white;
+}
+.displayPic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%
+}
+.personalInfoContainer{
+  display: flex;
+}
+.personalInfoText {
+  margin-left: 40px
+}
